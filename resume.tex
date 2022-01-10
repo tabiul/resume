@@ -1,0 +1,266 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSingleLine}[1]{
+  \item\small{
+     {#1}
+  }
+}
+
+\newcommand{\resumeSingleLineWithBold}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  {\Large Tabiul Mahmood} & Email : \href{mailto:tabiul@gmail.com}{tabiul@gmail.com}\\
+  \href{https://github.com/tabiul}{https://github.com/tabiul} & Mobile : +0410748638 \\
+\end{tabular*}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Siteminder}{Sydney, Australia}
+      {Technical Team Lead}{Oct 2017 - Present}
+      \resumeSubHeadingListStart
+       \resumeSingleLine
+       {Provide technical direction to scrum team}
+       \resumeSingleLine
+       {Designed and implemented microservice for Kubernetes environment}
+       \resumeSingleLine
+       {Promoted to Tech Lead on 24 Nov 2019 (was Senior Software Engineer previously)}
+       \resumeSingleLine
+       {Worked on transforming a monolithic application to a microservice architecture}
+       \resumeSingleLine
+       {Worked/Lead on key company projects e.g platform transformation}
+      \resumeSingleLineWithBold{Technology}
+       {groovy, kotlin, grails, grapql, kubernetes, terraform, helm, grafana, prometheus, spring, hibernate, reactor, mysql, docker, aws}
+      \resumeSubHeadingListEnd
+
+    \resumeSubheading
+      {World Manager}{Sydney, Australia}
+      {Senior Software Engineer}{Jul 2016 - Sep 2017}
+      \resumeSubHeadingListStart
+       \resumeSingleLine
+       {Designed and developed a Protobuf based REST Microservice}
+       \resumeSingleLine
+       {Re-implemented Seek Integration with the World Manager platform}
+       \resumeSingleLine
+       {Migrated recruitment related pages from PHP to Angular}
+       \resumeSingleLine
+       {Implemented integration with Broadbean}
+      \resumeSingleLineWithBold{Technology}
+       {scala, java, gradle, spring, angular, hibernate, mysql, protobuf, oauth2, scalatest}
+      \resumeSubHeadingListEnd
+
+
+    \resumeSubheading
+      {Advanced Micro Devices}{Singapore}
+      {Senior Product Development Engineer}{Jun 2011 - April 2016}
+      \resumeSubHeadingListStart
+       \resumeSingleLine
+       {Architect and developed a tool that allows translation of test program from one tester platform to another. Selected for internal Technology Showcase}
+       \resumeSingleLine
+       {Created a c++ parser for domain specific language}
+       \resumeSingleLine
+       {Managed all Bamboo Continuous Build Plan for the ATE Client Team}
+       \resumeSingleLine
+       {Initiated Innovation Project to encourage engineer to spend some of their free time to explore project ideas}
+       \resumeSingleLine
+       {Authored Technical Solution paper on how to transform key infrastructure from single threaded model to concurrent model}
+       \resumeSingleLine
+       {Developed the feature to allow execution of python script within C++ application}
+       \resumeSingleLine
+       {Developed a dependency graph tool using D3.js to highlight dependencies between various test program modules}
+       \resumeSingleLine
+       {Part of the team that rewrote application in Golang}
+      \resumeSingleLineWithBold{Technology}
+       {c++, java, golang, guice, maven, gradle, osgi, antlr, sablecc, waf, make, swig, protocol buffer, zeromq, google test, mockito, powermock, selenium, git, apache, php, perl, python, bash, bamboo }
+      \resumeSubHeadingListEnd
+
+    \resumeSubheading
+      {Great Eastern Insurance}{Singapore}
+      {Senior Software Engineer}{Nov 2010 - Jun 2011}
+      \resumeItemListStart
+        \resumeItem{Technology}
+        {java, spring, hibernate, struts 2, tomcat, oracle, python, svn }
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Barclays Technology Centre}{Singapore}
+      {Software Consultant}{May 2009 - Oct 2010}
+      \resumeItemListStart
+        \resumeItem{Technology}
+        {java, jsf, spring, hibernate, websphere, ehcache, dynacache, jquery, javscript, svn }
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {NovaCityNets}{Singapore}
+      {Senior Software Engineer}{Nov 2008 - May 2009}
+      \resumeItemListStart
+        \resumeItem{Technology}
+        {java, struts 2, tomcat, javascript, extjs, hibernate, spring, jackrabbit, ant }
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Autoscan Technology Private Limited}{Singapore}
+      {Senior Software Engineer}{Oct 2001 - Oct 2008}
+      \resumeItemListStart
+        \resumeItem{Technology}
+        {java, oracle, jsf, glassfish, vb 6, swing, spring, hibernate, pl/sql, sql }
+      \resumeItemListEnd
+
+
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Programming Languages}
+      {java, c++, python, groovy, golang, scala, kotlin, javascript, typescript}
+      \resumeSubItem{Database}
+      {mysql, oracle}
+      \resumeSubItem{Infrastructure}
+      {kubernetes, terraform, helm, aws, docker}
+      \resumeSubItem{Frameworks}
+      {spring, hibernate, webflux, grails}
+      \resumeSubItem{Application/Web Servers}
+      {apache, tomcat, glassfish}
+      \resumeSubItem{Build Tools}
+      {make, maven, gradle, waf, ant}
+      \resumeSubItem{Protocols}
+      {web services, rest, protocol buffers}
+      \resumeSubItem{Source Controls}
+      {svn, git}
+      \resumeSubItem{Testing Frameworks}
+      {junit, google test, mockito, powermock, selenium}
+      \resumeSubItem{Continuous Integration}
+      {bamboo, teamcity, buildkite}
+      \resumeSubItem{Operating System}
+      {windows, linux}
+      \resumeSubItem{Others}
+      {sql, swig, xml, json, antlr, zeromq}
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore}{Singapore}
+      {Master of Software Engineering}{Jun. 2013}
+    \resumeSubheading
+      {Monash University}{Australia}
+      {Bachelor of Information Technology}{May. 2017}
+    \resumeSubheading
+      {Singapore Polytechnic}{Singapore}
+      {Specialist Diploma in Statistics and Data Mining}{March. 2012}
+    \resumeSubheading
+      {Ngee Ann Polytechnic}{Singapore}
+      {Diploma in Computer \& Electronics Engineering}{August. 2001}
+  \resumeSubHeadingListEnd
+
+%--------Certificates------------
+\section{Certification}
+  \resumeSubHeadingListStart
+    \resumeSingleLine
+      {AWS Certified Developer Associate - May. 2018}
+    \resumeSingleLine
+      {Linux Professional Institute Level 1 Certified - Jan. 2013}
+    \resumeSingleLine
+      {CompTIA Linux+}{Jan. 2013}
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
